@@ -1,9 +1,18 @@
-.body{
-    background-image: url('/assets/img/fondo_1.jpg'); 
-z-index: auto;
-background-size: cover;
-background-repeat: no-repeat; 
+body {
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
+.bg-light-subtle {
+  background: rgba(255,255,255,0.3) !important;
+  backdrop-filter: blur(5px);
+}
+
+
+
+
 .card-img-top {
     height: 50%;
     object-fit: contain;
@@ -59,6 +68,7 @@ h5 {
 
 .container {
   display: flex;
+  background: transparent !important;
 }
 
 .Btn {
@@ -223,7 +233,7 @@ img{
 }
  
 .Card:hover {
-  transform: rotate(-5deg) scale(1.1);
+  transform: scale(1.1);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
  
