@@ -151,21 +151,21 @@ h5 {
   fill: white;
 }
 
-/* Variabel global untuk kustomisasi */
+
 :root {
-  --total-items: 3; /* Jumlah total item */
-  --animation-duration: 30s; /* Durasi animasi */
+  --total-items: 3;
+  --animation-duration: 30s; 
 }
 
-/* Container utama untuk scrolling */
+
 .scorlling {
   width: 100%;
   max-width: 1536px;
   position: relative;
-  height: 150px; /* Tinggi container */
+  height: 150px; 
   overflow: hidden;
 
-  /* Masking untuk memberikan efek fade di sisi kiri dan kanan */
+  
   mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0));
 }
 
@@ -174,33 +174,33 @@ img{
   height: 100%;
 }
 
-/* Animasi untuk menggeser elemen ke kiri */
+
 @keyframes scrollleft {
   to {
-    left: -200px; /* Elemen akan bergerak ke kiri sejauh 200px */
+    left: -200px; 
   }
 }
 
-/* Gaya dasar untuk setiap item */
-.item {
-  width: 250px; /* Lebar setiap item - jika diubah jangan lupa atur left mask */
-  height: 100%; /* Tinggi mengikuti container */
-  background-color: #bababa; /* Warna latar belakang */
-  border-radius: 6px; /* Membuat sudut melengkung */
-  position: absolute; /* Posisi absolut untuk animasi */
-  overflow: hidden; /* Sembunyikan konten yang melebihi lebar */
 
-  /* Posisi awal elemen di luar layar */
+.item {
+  width: 250px; 
+  height: 100%; 
+  background-color: #bababa; 
+  border-radius: 6px; 
+  position: absolute; 
+  overflow: hidden; 
+
+ 
   left: max(calc(250px * var(--total-items)), 100%);
 
-  /* Pengaturan animasi */
-  animation-name: scrollleft; /* Nama animasi */
-  animation-duration: var(--animation-duration); /* Durasi animasi */
-  animation-timing-function: linear; /* Kecepatan animasi konstan */
-  animation-iteration-count: infinite; /* Animasi berjalan terus-menerus */
+ 
+  animation-name: scrollleft; 
+  animation-duration: var(--animation-duration); 
+  animation-timing-function: linear; 
+  animation-iteration-count: infinite; 
 }
 
-/* Pengaturan delay animasi untuk setiap item */
+
 .item1 {
   animation-delay: calc(var(--animation-duration) / var(--total-items) * (var(--total-items) - 1) * -1);
 }
