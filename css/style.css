@@ -40,7 +40,8 @@ body {
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(2px); /* Aplicar desenfoque al fondo dentro de la tarjeta */
-    background: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */            
+    background: rgba(255, 255, 255, 0.8);/* Fondo semitransparente */   
+    margin: auto;
 }
 .blur-card {
   background: rgba(255, 255, 255, 0.4); /* Fondo blanco transparente */
